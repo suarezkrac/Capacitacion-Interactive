@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-jN-7jy">
+                                <connections>
+                                    <action selector="prendeApaga:" destination="2" eventType="valueChanged" id="lft-uN-k1e"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-nv-oLE">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Slider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cam-3L-AH4">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.94174692210431354" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cam-3L-AH4" firstAttribute="top" secondItem="yGY-nv-oLE" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7mn-Rp-Ksn"/>
+                                    <constraint firstItem="Cam-3L-AH4" firstAttribute="leading" secondItem="yGY-nv-oLE" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="E1L-hd-eri"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-bv-3uO">
+                                <color key="minimumTrackTintColor" red="1" green="0.028347989203039492" blue="0.0083139716350371096" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="cambioSlider:" destination="2" eventType="valueChanged" id="kw5-z1-FcJ"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iJ3-jx-OhQ">
+                                <connections>
+                                    <action selector="cambioStepper:" destination="2" eventType="valueChanged" id="UfH-9E-Ahs"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2yW-jN-7jy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="6TP-R4-oSa"/>
+                            <constraint firstItem="yGY-nv-oLE" firstAttribute="top" secondItem="2yW-jN-7jy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8td-vO-POJ"/>
+                            <constraint firstAttribute="bottom" secondItem="7ne-bv-3uO" secondAttribute="bottom" constant="225" id="B9e-td-zAb"/>
+                            <constraint firstAttribute="bottom" secondItem="iJ3-jx-OhQ" secondAttribute="bottom" constant="182" id="L7X-At-vbC"/>
+                            <constraint firstItem="iJ3-jx-OhQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LIw-0G-7I4"/>
+                            <constraint firstAttribute="bottom" secondItem="yGY-nv-oLE" secondAttribute="bottom" constant="266" id="OfD-oE-dgq"/>
+                            <constraint firstItem="7ne-bv-3uO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ucv-Bs-EVT"/>
+                            <constraint firstItem="2yW-jN-7jy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WBc-La-G7B"/>
+                            <constraint firstItem="yGY-nv-oLE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aWC-3K-RgS"/>
+                            <constraint firstAttribute="trailing" secondItem="yGY-nv-oLE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="efX-lE-Vaa"/>
+                            <constraint firstAttribute="trailing" secondItem="7ne-bv-3uO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iGT-mo-Ump"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="caja" destination="yGY-nv-oLE" id="MAt-8b-4LC"/>
+                        <outlet property="output" destination="Cam-3L-AH4" id="for-C1-5Mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cambioSlider:"/>
+                <relationship kind="action" name="cambioStepper:"/>
+                <relationship kind="action" name="prendeApaga:"/>
+                <relationship kind="outlet" name="caja" candidateClass="UIView"/>
+                <relationship kind="outlet" name="output" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
