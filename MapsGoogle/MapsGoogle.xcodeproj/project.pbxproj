@@ -364,6 +364,7 @@
 				9912AFF5179F68CD0056967E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
