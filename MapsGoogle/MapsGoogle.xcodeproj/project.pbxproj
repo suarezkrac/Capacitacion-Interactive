@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990877AA17A0AB290002EA40 /* Samples.m in Sources */ = {isa = PBXBuildFile; fileRef = 990877A917A0AB290002EA40 /* Samples.m */; };
+		990877B017A0B40A0002EA40 /* BasicMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990877AF17A0B40A0002EA40 /* BasicMapViewController.m */; };
 		9912AFD4179F68CD0056967E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912AFD3179F68CD0056967E /* UIKit.framework */; };
 		9912AFD6179F68CD0056967E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912AFD5179F68CD0056967E /* Foundation.framework */; };
 		9912AFD8179F68CD0056967E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912AFD7179F68CD0056967E /* CoreGraphics.framework */; };
@@ -17,7 +19,6 @@
 		9912AFE8179F68CD0056967E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9912AFE7179F68CD0056967E /* Default@2x.png */; };
 		9912AFEA179F68CD0056967E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9912AFE9179F68CD0056967E /* Default-568h@2x.png */; };
 		9912AFED179F68CD0056967E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912AFEC179F68CD0056967E /* ViewController.m */; };
-		9912AFF0179F68CD0056967E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9912AFEE179F68CD0056967E /* ViewController.xib */; };
 		9912AFF7179F69180056967E /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912AFF6179F69180056967E /* GoogleMaps.framework */; };
 		9912AFF9179F69550056967E /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9912AFF8179F69550056967E /* GoogleMaps.bundle */; };
 		9912AFFB179F69960056967E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912AFFA179F69960056967E /* AVFoundation.framework */; };
@@ -35,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		990877A817A0AB290002EA40 /* Samples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Samples.h; sourceTree = "<group>"; };
+		990877A917A0AB290002EA40 /* Samples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Samples.m; sourceTree = "<group>"; };
+		990877AE17A0B40A0002EA40 /* BasicMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMapViewController.h; sourceTree = "<group>"; };
+		990877AF17A0B40A0002EA40 /* BasicMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapViewController.m; sourceTree = "<group>"; };
 		9912AFD0179F68CD0056967E /* MapsGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9912AFD3179F68CD0056967E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9912AFD5179F68CD0056967E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +55,6 @@
 		9912AFE9179F68CD0056967E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9912AFEB179F68CD0056967E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9912AFEC179F68CD0056967E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9912AFEF179F68CD0056967E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		9912AFF6179F69180056967E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		9912AFF8179F69550056967E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		9912AFFA179F69960056967E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +98,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		990877A717A0AAF40002EA40 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				990877A817A0AB290002EA40 /* Samples.h */,
+				990877A917A0AB290002EA40 /* Samples.m */,
+				990877AD17A0AB520002EA40 /* Services Demos */,
+				990877AC17A0AB470002EA40 /* Camera Demos */,
+				990877AB17A0AB350002EA40 /* Map Demos */,
+			);
+			name = Samples;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		990877AB17A0AB350002EA40 /* Map Demos */ = {
+			isa = PBXGroup;
+			children = (
+				990877AE17A0B40A0002EA40 /* BasicMapViewController.h */,
+				990877AF17A0B40A0002EA40 /* BasicMapViewController.m */,
+			);
+			name = "Map Demos";
+			sourceTree = "<group>";
+		};
+		990877AC17A0AB470002EA40 /* Camera Demos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Camera Demos";
+			sourceTree = "<group>";
+		};
+		990877AD17A0AB520002EA40 /* Services Demos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Services Demos";
+			sourceTree = "<group>";
+		};
 		9912AFC7179F68CD0056967E = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +182,7 @@
 				9912AFE3179F68CD0056967E /* AppDelegate.m */,
 				9912AFEB179F68CD0056967E /* ViewController.h */,
 				9912AFEC179F68CD0056967E /* ViewController.m */,
-				9912AFEE179F68CD0056967E /* ViewController.xib */,
+				990877A717A0AAF40002EA40 /* Samples */,
 				9912AFDA179F68CD0056967E /* Supporting Files */,
 			);
 			path = MapsGoogle;
@@ -217,7 +257,6 @@
 				9912AFE6179F68CD0056967E /* Default.png in Resources */,
 				9912AFE8179F68CD0056967E /* Default@2x.png in Resources */,
 				9912AFEA179F68CD0056967E /* Default-568h@2x.png in Resources */,
-				9912AFF0179F68CD0056967E /* ViewController.xib in Resources */,
 				9912AFF9179F69550056967E /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +271,8 @@
 				9912AFE0179F68CD0056967E /* main.m in Sources */,
 				9912AFE4179F68CD0056967E /* AppDelegate.m in Sources */,
 				9912AFED179F68CD0056967E /* ViewController.m in Sources */,
+				990877AA17A0AB290002EA40 /* Samples.m in Sources */,
+				990877B017A0B40A0002EA40 /* BasicMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +285,6 @@
 				9912AFDD179F68CD0056967E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9912AFEE179F68CD0056967E /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9912AFEF179F68CD0056967E /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,8 +356,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapsGoogle/MapsGoogle-Prefix.pch";
 				INFOPLIST_FILE = "MapsGoogle/MapsGoogle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -339,8 +374,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapsGoogle/MapsGoogle-Prefix.pch";
 				INFOPLIST_FILE = "MapsGoogle/MapsGoogle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

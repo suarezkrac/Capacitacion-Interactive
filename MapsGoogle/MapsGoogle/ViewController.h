@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class AppDelegate;
+
+@interface ViewController : UITableViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) AppDelegate * appDelegate;
 
 @end
