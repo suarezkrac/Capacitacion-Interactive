@@ -104,7 +104,6 @@ titleForHeaderInSection:(NSInteger)section {
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // The user has chosen a sample; load it and clear the selection!
     [self loadDemo:indexPath.section atIndex:indexPath.row];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
