@@ -10,6 +10,7 @@
 
 //Import Map
 #import "BasicMapViewController.h"
+#import "MyLocationViewController.h"
 
 //Import Camera
 
@@ -19,12 +20,18 @@
 
 +(NSArray *)loadSections{
 //    return @[@"Map", @"Camera", @"Services"];
-    return @[@"Map"];
+    return @[@"Mapas"];
 
 }
 
 +(NSArray *)loadDemos{
-    NSArray *mapDemos = @[[self newDemo:[BasicMapViewController class] withTitle:@"Basic Map" andDescription:nil]];
+    NSArray *mapDemos = @[[self newDemo:[BasicMapViewController class]
+                              withTitle:@"Mapa Basico"
+                         andDescription:nil],
+                          [self newDemo:[MyLocationViewController class]
+                              withTitle:@"Mi Ubicación"
+                         andDescription:nil]];
+    
   //  NSArray *cameraDemos = nil;
   //  NSArray *servicesDemos = nil;
     

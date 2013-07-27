@@ -33,6 +33,7 @@
 		9912B00D179F6A1A0056967E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B00C179F6A1A0056967E /* OpenGLES.framework */; };
 		9912B00F179F6A250056967E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B00E179F6A250056967E /* QuartzCore.framework */; };
 		9912B011179F6A2E0056967E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B010179F6A2E0056967E /* SystemConfiguration.framework */; };
+		99BA441A17A402A000D10BED /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441917A402A000D10BED /* MyLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		9912B00C179F6A1A0056967E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9912B00E179F6A250056967E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9912B010179F6A2E0056967E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		99BA441817A4029F00D10BED /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
+		99BA441917A402A000D10BED /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				990877AE17A0B40A0002EA40 /* BasicMapViewController.h */,
 				990877AF17A0B40A0002EA40 /* BasicMapViewController.m */,
+				99BA441817A4029F00D10BED /* MyLocationViewController.h */,
+				99BA441917A402A000D10BED /* MyLocationViewController.m */,
 			);
 			name = "Map Demos";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				9912AFED179F68CD0056967E /* ViewController.m in Sources */,
 				990877AA17A0AB290002EA40 /* Samples.m in Sources */,
 				990877B017A0B40A0002EA40 /* BasicMapViewController.m in Sources */,
+				99BA441A17A402A000D10BED /* MyLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
