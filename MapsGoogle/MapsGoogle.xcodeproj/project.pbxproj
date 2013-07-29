@@ -34,6 +34,13 @@
 		9912B00F179F6A250056967E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B00E179F6A250056967E /* QuartzCore.framework */; };
 		9912B011179F6A2E0056967E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B010179F6A2E0056967E /* SystemConfiguration.framework */; };
 		99BA441A17A402A000D10BED /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441917A402A000D10BED /* MyLocationViewController.m */; };
+		99BA441D17A40AAA00D10BED /* MapTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441C17A40AAA00D10BED /* MapTypesViewController.m */; };
+		99BA442017A413BB00D10BED /* GestosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441F17A413BB00D10BED /* GestosViewController.m */; };
+		99BA442317A41C7700D10BED /* CamaraLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA442217A41C7700D10BED /* CamaraLayerViewController.m */; };
+		99BA442717A4247900D10BED /* MarkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA442617A4247900D10BED /* MarkerViewController.m */; };
+		99BA442A17A428A700D10BED /* CustomMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA442917A428A700D10BED /* CustomMarkViewController.m */; };
+		99BA442E17A42CEF00D10BED /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BA442D17A42CEF00D10BED /* arrow.png */; };
+		99BA443217A431DC00D10BED /* StreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA443117A431DC00D10BED /* StreetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +79,19 @@
 		9912B010179F6A2E0056967E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		99BA441817A4029F00D10BED /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
 		99BA441917A402A000D10BED /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
+		99BA441B17A40AAA00D10BED /* MapTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTypesViewController.h; sourceTree = "<group>"; };
+		99BA441C17A40AAA00D10BED /* MapTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTypesViewController.m; sourceTree = "<group>"; };
+		99BA441E17A413BB00D10BED /* GestosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestosViewController.h; sourceTree = "<group>"; };
+		99BA441F17A413BB00D10BED /* GestosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestosViewController.m; sourceTree = "<group>"; };
+		99BA442117A41C7700D10BED /* CamaraLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamaraLayerViewController.h; sourceTree = "<group>"; };
+		99BA442217A41C7700D10BED /* CamaraLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamaraLayerViewController.m; sourceTree = "<group>"; };
+		99BA442517A4247900D10BED /* MarkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerViewController.h; sourceTree = "<group>"; };
+		99BA442617A4247900D10BED /* MarkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerViewController.m; sourceTree = "<group>"; };
+		99BA442817A428A700D10BED /* CustomMarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMarkViewController.h; sourceTree = "<group>"; };
+		99BA442917A428A700D10BED /* CustomMarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMarkViewController.m; sourceTree = "<group>"; };
+		99BA442D17A42CEF00D10BED /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		99BA443017A431DC00D10BED /* StreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetViewController.h; sourceTree = "<group>"; };
+		99BA443117A431DC00D10BED /* StreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +124,10 @@
 		990877A717A0AAF40002EA40 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				99BA442F17A431B100D10BED /* Street */,
 				990877A817A0AB290002EA40 /* Samples.h */,
 				990877A917A0AB290002EA40 /* Samples.m */,
+				99BA442417A4245500D10BED /* Markers */,
 				990877AD17A0AB520002EA40 /* Services Demos */,
 				990877AC17A0AB470002EA40 /* Camera Demos */,
 				990877AB17A0AB350002EA40 /* Map Demos */,
@@ -121,6 +143,10 @@
 				990877AF17A0B40A0002EA40 /* BasicMapViewController.m */,
 				99BA441817A4029F00D10BED /* MyLocationViewController.h */,
 				99BA441917A402A000D10BED /* MyLocationViewController.m */,
+				99BA441B17A40AAA00D10BED /* MapTypesViewController.h */,
+				99BA441C17A40AAA00D10BED /* MapTypesViewController.m */,
+				99BA441E17A413BB00D10BED /* GestosViewController.h */,
+				99BA441F17A413BB00D10BED /* GestosViewController.m */,
 			);
 			name = "Map Demos";
 			sourceTree = "<group>";
@@ -128,6 +154,8 @@
 		990877AC17A0AB470002EA40 /* Camera Demos */ = {
 			isa = PBXGroup;
 			children = (
+				99BA442117A41C7700D10BED /* CamaraLayerViewController.h */,
+				99BA442217A41C7700D10BED /* CamaraLayerViewController.m */,
 			);
 			name = "Camera Demos";
 			sourceTree = "<group>";
@@ -207,6 +235,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99BA442417A4245500D10BED /* Markers */ = {
+			isa = PBXGroup;
+			children = (
+				99BA442D17A42CEF00D10BED /* arrow.png */,
+				99BA442517A4247900D10BED /* MarkerViewController.h */,
+				99BA442617A4247900D10BED /* MarkerViewController.m */,
+				99BA442817A428A700D10BED /* CustomMarkViewController.h */,
+				99BA442917A428A700D10BED /* CustomMarkViewController.m */,
+			);
+			name = Markers;
+			sourceTree = "<group>";
+		};
+		99BA442F17A431B100D10BED /* Street */ = {
+			isa = PBXGroup;
+			children = (
+				99BA443017A431DC00D10BED /* StreetViewController.h */,
+				99BA443117A431DC00D10BED /* StreetViewController.m */,
+			);
+			name = Street;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +312,7 @@
 				9912AFE8179F68CD0056967E /* Default@2x.png in Resources */,
 				9912AFEA179F68CD0056967E /* Default-568h@2x.png in Resources */,
 				9912AFF9179F69550056967E /* GoogleMaps.bundle in Resources */,
+				99BA442E17A42CEF00D10BED /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +329,12 @@
 				990877AA17A0AB290002EA40 /* Samples.m in Sources */,
 				990877B017A0B40A0002EA40 /* BasicMapViewController.m in Sources */,
 				99BA441A17A402A000D10BED /* MyLocationViewController.m in Sources */,
+				99BA441D17A40AAA00D10BED /* MapTypesViewController.m in Sources */,
+				99BA442017A413BB00D10BED /* GestosViewController.m in Sources */,
+				99BA442317A41C7700D10BED /* CamaraLayerViewController.m in Sources */,
+				99BA442717A4247900D10BED /* MarkerViewController.m in Sources */,
+				99BA442A17A428A700D10BED /* CustomMarkViewController.m in Sources */,
+				99BA443217A431DC00D10BED /* StreetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

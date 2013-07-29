@@ -11,16 +11,23 @@
 //Import Map
 #import "BasicMapViewController.h"
 #import "MyLocationViewController.h"
+#import "MapTypesViewController.h"
+#import "GestosViewController.h"
 
 //Import Camera
+#import "CamaraLayerViewController.h"
 
-//Import Services
+//Import Marker
+#import "MarkerViewController.h"
+#import "CustomMarkViewController.h"
+
+//Import Street
+#import "StreetViewController.h"
 
 @implementation Samples
 
 +(NSArray *)loadSections{
-//    return @[@"Map", @"Camera", @"Services"];
-    return @[@"Mapas"];
+    return @[@"Mapas", @"Camara", @"Marcadores", @"Street View"];
 
 }
 
@@ -30,14 +37,31 @@
                          andDescription:nil],
                           [self newDemo:[MyLocationViewController class]
                               withTitle:@"Mi Ubicación"
+                         andDescription:nil],
+                          [self newDemo:[MapTypesViewController class]
+                              withTitle:@"Tipos de Mapa"
+                         andDescription:nil],
+                          [self newDemo:[GestosViewController class]
+                              withTitle:@"Control de Gestos"
                          andDescription:nil]];
     
-  //  NSArray *cameraDemos = nil;
-  //  NSArray *servicesDemos = nil;
+    NSArray *cameraDemos = @[[self newDemo:[CamaraLayerViewController class]
+                                 withTitle:@"Movimiento Camara"
+                            andDescription:nil]];
     
-  //  return @[mapDemos, cameraDemos, servicesDemos];
+    NSArray *markers = @[[self newDemo:[MarkerViewController class]
+                                 withTitle:@"Marcador"
+                            andDescription:nil],
+                         [self newDemo:[CustomMarkViewController class]
+                             withTitle:@"Marcadores Custom"
+                        andDescription:nil]];
     
-    return @[mapDemos];
+    NSArray *streetview = @[[self newDemo:[StreetViewController class]
+                              withTitle:@"Street"
+                         andDescription:nil]];
+ 
+    return @[mapDemos, cameraDemos, markers, streetview];
+    
 }
 
 + (NSDictionary *)newDemo:(Class) class
