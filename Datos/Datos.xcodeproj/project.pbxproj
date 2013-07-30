@@ -22,6 +22,8 @@
 		9938738D17A747FB00A022D3 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938738C17A747FB00A022D3 /* MasterViewController.m */; };
 		9938739017A747FB00A022D3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938738F17A747FB00A022D3 /* DetailViewController.m */; };
 		9938739817A74AAD00A022D3 /* AgregarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938739717A74AAD00A022D3 /* AgregarViewController.m */; };
+		9938739B17A74B7000A022D3 /* RepositorioClientes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938739A17A74B7000A022D3 /* RepositorioClientes.m */; };
+		9938739E17A74B9100A022D3 /* Cliente.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938739D17A74B9100A022D3 /* Cliente.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		9938738F17A747FB00A022D3 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9938739617A74AAD00A022D3 /* AgregarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarViewController.h; sourceTree = "<group>"; };
 		9938739717A74AAD00A022D3 /* AgregarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarViewController.m; sourceTree = "<group>"; };
+		9938739917A74B7000A022D3 /* RepositorioClientes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositorioClientes.h; sourceTree = "<group>"; };
+		9938739A17A74B7000A022D3 /* RepositorioClientes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositorioClientes.m; sourceTree = "<group>"; };
+		9938739C17A74B9100A022D3 /* Cliente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cliente.h; sourceTree = "<group>"; };
+		9938739D17A74B9100A022D3 /* Cliente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cliente.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 				9938737C17A747FB00A022D3 /* AppDelegate.h */,
 				9938737D17A747FB00A022D3 /* AppDelegate.m */,
 				9938738517A747FB00A022D3 /* MainStoryboard.storyboard */,
+				9938739917A74B7000A022D3 /* RepositorioClientes.h */,
+				9938739A17A74B7000A022D3 /* RepositorioClientes.m */,
+				9938739C17A74B9100A022D3 /* Cliente.h */,
+				9938739D17A74B9100A022D3 /* Cliente.m */,
 				9938739617A74AAD00A022D3 /* AgregarViewController.h */,
 				9938739717A74AAD00A022D3 /* AgregarViewController.m */,
 				9938738B17A747FB00A022D3 /* MasterViewController.h */,
@@ -196,6 +206,8 @@
 				9938738D17A747FB00A022D3 /* MasterViewController.m in Sources */,
 				9938739017A747FB00A022D3 /* DetailViewController.m in Sources */,
 				9938739817A74AAD00A022D3 /* AgregarViewController.m in Sources */,
+				9938739B17A74B7000A022D3 /* RepositorioClientes.m in Sources */,
+				9938739E17A74B9100A022D3 /* Cliente.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
