@@ -33,6 +33,7 @@
 		9912B00D179F6A1A0056967E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B00C179F6A1A0056967E /* OpenGLES.framework */; };
 		9912B00F179F6A250056967E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B00E179F6A250056967E /* QuartzCore.framework */; };
 		9912B011179F6A2E0056967E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9912B010179F6A2E0056967E /* SystemConfiguration.framework */; };
+		9938730017A7339600A022D3 /* Camara3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993872FF17A7339600A022D3 /* Camara3DViewController.m */; };
 		99BA441A17A402A000D10BED /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441917A402A000D10BED /* MyLocationViewController.m */; };
 		99BA441D17A40AAA00D10BED /* MapTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441C17A40AAA00D10BED /* MapTypesViewController.m */; };
 		99BA442017A413BB00D10BED /* GestosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA441F17A413BB00D10BED /* GestosViewController.m */; };
@@ -77,6 +78,8 @@
 		9912B00C179F6A1A0056967E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9912B00E179F6A250056967E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9912B010179F6A2E0056967E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		993872FE17A7339600A022D3 /* Camara3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camara3DViewController.h; sourceTree = "<group>"; };
+		993872FF17A7339600A022D3 /* Camara3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camara3DViewController.m; sourceTree = "<group>"; };
 		99BA441817A4029F00D10BED /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
 		99BA441917A402A000D10BED /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
 		99BA441B17A40AAA00D10BED /* MapTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTypesViewController.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				99BA442117A41C7700D10BED /* CamaraLayerViewController.h */,
 				99BA442217A41C7700D10BED /* CamaraLayerViewController.m */,
+				993872FE17A7339600A022D3 /* Camara3DViewController.h */,
+				993872FF17A7339600A022D3 /* Camara3DViewController.m */,
 			);
 			name = "Camera Demos";
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				99BA442717A4247900D10BED /* MarkerViewController.m in Sources */,
 				99BA442A17A428A700D10BED /* CustomMarkViewController.m in Sources */,
 				99BA443217A431DC00D10BED /* StreetViewController.m in Sources */,
+				9938730017A7339600A022D3 /* Camara3DViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

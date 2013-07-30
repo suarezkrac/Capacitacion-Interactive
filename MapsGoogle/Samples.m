@@ -16,6 +16,7 @@
 
 //Import Camera
 #import "CamaraLayerViewController.h"
+#import "Camara3DViewController.h"
 
 //Import Marker
 #import "MarkerViewController.h"
@@ -47,6 +48,9 @@
     
     NSArray *cameraDemos = @[[self newDemo:[CamaraLayerViewController class]
                                  withTitle:@"Movimiento Camara"
+                            andDescription:nil],
+                             [self newDemo:[Camara3DViewController class]
+                                 withTitle:@"Camara 3D"
                             andDescription:nil]];
     
     NSArray *markers = @[[self newDemo:[MarkerViewController class]
