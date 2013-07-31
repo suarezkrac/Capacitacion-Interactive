@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  Datos
+//  SQLLite
 //
-//  Created by Equipo Desarrollo 2 on 29/07/13.
+//  Created by Equipo Desarrollo 2 on 30/07/13.
 //  Copyright (c) 2013 Cymetria. All rights reserved.
 //
 

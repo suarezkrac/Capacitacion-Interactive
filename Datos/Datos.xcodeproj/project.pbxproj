@@ -18,7 +18,6 @@
 		9938738217A747FB00A022D3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9938738117A747FB00A022D3 /* Default@2x.png */; };
 		9938738417A747FB00A022D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9938738317A747FB00A022D3 /* Default-568h@2x.png */; };
 		9938738717A747FB00A022D3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9938738517A747FB00A022D3 /* MainStoryboard.storyboard */; };
-		9938738A17A747FB00A022D3 /* Datos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9938738817A747FB00A022D3 /* Datos.xcdatamodeld */; };
 		9938738D17A747FB00A022D3 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938738C17A747FB00A022D3 /* MasterViewController.m */; };
 		9938739017A747FB00A022D3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938738F17A747FB00A022D3 /* DetailViewController.m */; };
 		9938739817A74AAD00A022D3 /* AgregarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9938739717A74AAD00A022D3 /* AgregarViewController.m */; };
@@ -42,7 +41,6 @@
 		9938738117A747FB00A022D3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9938738317A747FB00A022D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9938738617A747FB00A022D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9938738917A747FB00A022D3 /* Datos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Datos.xcdatamodel; sourceTree = "<group>"; };
 		9938738B17A747FB00A022D3 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		9938738C17A747FB00A022D3 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		9938738E17A747FB00A022D3 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				9938738C17A747FB00A022D3 /* MasterViewController.m */,
 				9938738E17A747FB00A022D3 /* DetailViewController.h */,
 				9938738F17A747FB00A022D3 /* DetailViewController.m */,
-				9938738817A747FB00A022D3 /* Datos.xcdatamodeld */,
 				9938737417A747FB00A022D3 /* Supporting Files */,
 			);
 			path = Datos;
@@ -202,7 +199,6 @@
 			files = (
 				9938737A17A747FB00A022D3 /* main.m in Sources */,
 				9938737E17A747FB00A022D3 /* AppDelegate.m in Sources */,
-				9938738A17A747FB00A022D3 /* Datos.xcdatamodeld in Sources */,
 				9938738D17A747FB00A022D3 /* MasterViewController.m in Sources */,
 				9938739017A747FB00A022D3 /* DetailViewController.m in Sources */,
 				9938739817A74AAD00A022D3 /* AgregarViewController.m in Sources */,
@@ -295,6 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Datos/Datos-Prefix.pch";
 				INFOPLIST_FILE = "Datos/Datos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,6 +303,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Datos/Datos-Prefix.pch";
 				INFOPLIST_FILE = "Datos/Datos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -330,21 +328,9 @@
 				9938739517A747FB00A022D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9938738817A747FB00A022D3 /* Datos.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9938738917A747FB00A022D3 /* Datos.xcdatamodel */,
-			);
-			currentVersion = 9938738917A747FB00A022D3 /* Datos.xcdatamodel */;
-			path = Datos.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9938736017A747FB00A022D3 /* Project object */;
 }

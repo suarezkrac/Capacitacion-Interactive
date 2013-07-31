@@ -1,22 +1,18 @@
 //
 //  AppDelegate.m
-//  Datos
+//  SQLLite
 //
-//  Created by Equipo Desarrollo 2 on 29/07/13.
+//  Created by Equipo Desarrollo 2 on 30/07/13.
 //  Copyright (c) 2013 Cymetria. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MasterViewController.h"
-#import "RepositorioClientes.h"
 
 @implementation AppDelegate
-@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-
     return YES;
 }
 							
@@ -30,7 +26,6 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    [[RepositorioClientes sharedInstance] guardar];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -45,8 +40,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Saves changes in the application's managed object context before the application terminates.
-    [[RepositorioClientes sharedInstance] guardar];
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end
