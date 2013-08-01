@@ -18,7 +18,18 @@
 		9994D4E217A9D82500460028 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4E117A9D82500460028 /* Default-568h@2x.png */; };
 		9994D4E517A9D82500460028 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4E317A9D82500460028 /* MainStoryboard_iPhone.storyboard */; };
 		9994D4E817A9D82500460028 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4E617A9D82500460028 /* MainStoryboard_iPad.storyboard */; };
-		9994D4EB17A9D82500460028 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D4EA17A9D82500460028 /* ViewController.m */; };
+		9994D4F517A9DE0800460028 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4F117A9DE0800460028 /* back-arrow.png */; };
+		9994D4F617A9DE0800460028 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4F217A9DE0800460028 /* back-arrow@2x.png */; };
+		9994D4F717A9DE0800460028 /* forward-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4F317A9DE0800460028 /* forward-arrow.png */; };
+		9994D4F817A9DE0800460028 /* forward-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9994D4F417A9DE0800460028 /* forward-arrow@2x.png */; };
+		9994D4FB17A9E7F500460028 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D4FA17A9E7F500460028 /* DetailViewController.m */; };
+		9994D4FE17A9E81400460028 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D4FD17A9E81400460028 /* WebViewController.m */; };
+		9994D50417A9E85100460028 /* AddViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D50317A9E85100460028 /* AddViewViewController.m */; };
+		9994D50817A9E8A600460028 /* BWDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D50717A9E8A600460028 /* BWDB.m */; };
+		9994D50C17A9E8B400460028 /* BWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D50B17A9E8B400460028 /* BWUtilities.m */; };
+		9994D51517A9E90A00460028 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9994D51417A9E90A00460028 /* libsqlite3.dylib */; };
+		9994D51C17A9EB5000460028 /* FeedsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D51B17A9EB5000460028 /* FeedsTableViewController.m */; };
+		9994D51F17A9EBAA00460028 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994D51E17A9EBAA00460028 /* ItemsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +48,28 @@
 		9994D4E117A9D82500460028 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9994D4E417A9D82500460028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		9994D4E717A9D82500460028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		9994D4E917A9D82500460028 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9994D4EA17A9D82500460028 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9994D4F117A9DE0800460028 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
+		9994D4F217A9DE0800460028 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
+		9994D4F317A9DE0800460028 /* forward-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow.png"; sourceTree = "<group>"; };
+		9994D4F417A9DE0800460028 /* forward-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow@2x.png"; sourceTree = "<group>"; };
+		9994D4F917A9E7F500460028 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9994D4FA17A9E7F500460028 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9994D4FC17A9E81400460028 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		9994D4FD17A9E81400460028 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		9994D50217A9E85100460028 /* AddViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewViewController.h; sourceTree = "<group>"; };
+		9994D50317A9E85100460028 /* AddViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewViewController.m; sourceTree = "<group>"; };
+		9994D50617A9E8A600460028 /* BWDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWDB.h; sourceTree = "<group>"; };
+		9994D50717A9E8A600460028 /* BWDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWDB.m; sourceTree = "<group>"; };
+		9994D50A17A9E8B400460028 /* BWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWUtilities.h; sourceTree = "<group>"; };
+		9994D50B17A9E8B400460028 /* BWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWUtilities.m; sourceTree = "<group>"; };
+		9994D51217A9E8FC00460028 /* RSSDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDB.h; sourceTree = "<group>"; };
+		9994D51317A9E8FC00460028 /* RSSDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDB.m; sourceTree = "<group>"; };
+		9994D51417A9E90A00460028 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9994D51617A9E95300460028 /* bwrss.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bwrss.db; sourceTree = "<group>"; };
+		9994D51A17A9EB5000460028 /* FeedsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsTableViewController.h; path = ../FeedsTableViewController.h; sourceTree = "<group>"; };
+		9994D51B17A9EB5000460028 /* FeedsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsTableViewController.m; path = ../FeedsTableViewController.m; sourceTree = "<group>"; };
+		9994D51D17A9EBAA00460028 /* ItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsTableViewController.h; path = ../ItemsTableViewController.h; sourceTree = "<group>"; };
+		9994D51E17A9EBAA00460028 /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsTableViewController.m; path = ../ItemsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9994D51517A9E90A00460028 /* libsqlite3.dylib in Frameworks */,
 				9994D4CC17A9D82500460028 /* UIKit.framework in Frameworks */,
 				9994D4CE17A9D82500460028 /* Foundation.framework in Frameworks */,
 				9994D4D017A9D82500460028 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +90,8 @@
 		9994D4BF17A9D82500460028 = {
 			isa = PBXGroup;
 			children = (
+				9994D51617A9E95300460028 /* bwrss.db */,
+				9994D51417A9E90A00460028 /* libsqlite3.dylib */,
 				9994D4D117A9D82500460028 /* SQLLiteRSS */,
 				9994D4CA17A9D82500460028 /* Frameworks */,
 				9994D4C917A9D82500460028 /* Products */,
@@ -85,12 +119,23 @@
 		9994D4D117A9D82500460028 /* SQLLiteRSS */ = {
 			isa = PBXGroup;
 			children = (
+				9994D51117A9E8EB00460028 /* RSSDB */,
+				9994D50917A9E8B400460028 /* BWUtilities */,
+				9994D50517A9E8A600460028 /* BWDB */,
 				9994D4DA17A9D82500460028 /* AppDelegate.h */,
 				9994D4DB17A9D82500460028 /* AppDelegate.m */,
 				9994D4E317A9D82500460028 /* MainStoryboard_iPhone.storyboard */,
 				9994D4E617A9D82500460028 /* MainStoryboard_iPad.storyboard */,
-				9994D4E917A9D82500460028 /* ViewController.h */,
-				9994D4EA17A9D82500460028 /* ViewController.m */,
+				9994D51D17A9EBAA00460028 /* ItemsTableViewController.h */,
+				9994D51E17A9EBAA00460028 /* ItemsTableViewController.m */,
+				9994D51A17A9EB5000460028 /* FeedsTableViewController.h */,
+				9994D51B17A9EB5000460028 /* FeedsTableViewController.m */,
+				9994D4F917A9E7F500460028 /* DetailViewController.h */,
+				9994D4FA17A9E7F500460028 /* DetailViewController.m */,
+				9994D50217A9E85100460028 /* AddViewViewController.h */,
+				9994D50317A9E85100460028 /* AddViewViewController.m */,
+				9994D4FC17A9E81400460028 /* WebViewController.h */,
+				9994D4FD17A9E81400460028 /* WebViewController.m */,
 				9994D4D217A9D82500460028 /* Supporting Files */,
 			);
 			path = SQLLiteRSS;
@@ -99,6 +144,10 @@
 		9994D4D217A9D82500460028 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9994D4F117A9DE0800460028 /* back-arrow.png */,
+				9994D4F217A9DE0800460028 /* back-arrow@2x.png */,
+				9994D4F317A9DE0800460028 /* forward-arrow.png */,
+				9994D4F417A9DE0800460028 /* forward-arrow@2x.png */,
 				9994D4D317A9D82500460028 /* SQLLiteRSS-Info.plist */,
 				9994D4D417A9D82500460028 /* InfoPlist.strings */,
 				9994D4D717A9D82500460028 /* main.m */,
@@ -108,6 +157,33 @@
 				9994D4E117A9D82500460028 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9994D50517A9E8A600460028 /* BWDB */ = {
+			isa = PBXGroup;
+			children = (
+				9994D50617A9E8A600460028 /* BWDB.h */,
+				9994D50717A9E8A600460028 /* BWDB.m */,
+			);
+			path = BWDB;
+			sourceTree = "<group>";
+		};
+		9994D50917A9E8B400460028 /* BWUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9994D50A17A9E8B400460028 /* BWUtilities.h */,
+				9994D50B17A9E8B400460028 /* BWUtilities.m */,
+			);
+			path = BWUtilities;
+			sourceTree = "<group>";
+		};
+		9994D51117A9E8EB00460028 /* RSSDB */ = {
+			isa = PBXGroup;
+			children = (
+				9994D51217A9E8FC00460028 /* RSSDB.h */,
+				9994D51317A9E8FC00460028 /* RSSDB.m */,
+			);
+			name = RSSDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +243,10 @@
 				9994D4E217A9D82500460028 /* Default-568h@2x.png in Resources */,
 				9994D4E517A9D82500460028 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9994D4E817A9D82500460028 /* MainStoryboard_iPad.storyboard in Resources */,
+				9994D4F517A9DE0800460028 /* back-arrow.png in Resources */,
+				9994D4F617A9DE0800460028 /* back-arrow@2x.png in Resources */,
+				9994D4F717A9DE0800460028 /* forward-arrow.png in Resources */,
+				9994D4F817A9DE0800460028 /* forward-arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +259,13 @@
 			files = (
 				9994D4D817A9D82500460028 /* main.m in Sources */,
 				9994D4DC17A9D82500460028 /* AppDelegate.m in Sources */,
-				9994D4EB17A9D82500460028 /* ViewController.m in Sources */,
+				9994D4FB17A9E7F500460028 /* DetailViewController.m in Sources */,
+				9994D4FE17A9E81400460028 /* WebViewController.m in Sources */,
+				9994D50417A9E85100460028 /* AddViewViewController.m in Sources */,
+				9994D50817A9E8A600460028 /* BWDB.m in Sources */,
+				9994D50C17A9E8B400460028 /* BWUtilities.m in Sources */,
+				9994D51C17A9EB5000460028 /* FeedsTableViewController.m in Sources */,
+				9994D51F17A9EBAA00460028 /* ItemsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

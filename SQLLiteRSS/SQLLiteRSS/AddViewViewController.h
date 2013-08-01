@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddViewViewController.h
 //  SQLLiteRSS
 //
 //  Created by Equipo Desarrollo 2 on 31/07/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AddViewViewController : UIViewController
 
 @end
