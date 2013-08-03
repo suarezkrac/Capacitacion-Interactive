@@ -122,7 +122,7 @@
     }else{
         entry = self.thingsToLearned[indexPath.row];
         ((CustomCellBackground *)cell.backgroundView).lastCell = indexPath.row == self.thingsToLearned.count - 1;
-        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = indexPath.row == self.thingsToLearn.count - 1;
+        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = indexPath.row == self.thingsToLearned.count - 1;
     }
     
     cell.textLabel.text = entry;
