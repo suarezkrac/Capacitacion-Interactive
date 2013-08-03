@@ -9,6 +9,7 @@
 #import "CoolTableViewController.h"
 #import "CustomHeader.h"
 #import "CustomFooter.h"
+#import "CustomCellBackground.h"
 
 @interface CoolTableViewController ()
 @property (copy) NSArray* array;
@@ -97,15 +98,31 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    if(![cell.backgroundView isKindOfClass:[CustomCellBackground class]])
+    {
+        CustomCellBackground *backgroundCell = [[CustomCellBackground alloc] init];
+        cell.backgroundView = backgroundCell;
+    }
+    
+    if(![cell.selectedBackgroundView isKindOfClass:[CustomCellBackground class]])
+    {
+        CustomCellBackground * selectedBackgroundCell = [[CustomCellBackground alloc] init];
+        selectedBackgroundCell.selected = YES;
+        cell.selectedBackgroundView    = selectedBackgroundCell;
+    }
+    
     // Configure the cell.
     
     NSString *entry;
     
     if (indexPath.section == 0) {
         entry = self.thingsToLearn[indexPath.row];
+          ((CustomCellBackground *) cell.backgroundView).lastCell = indexPath.row == self.thingsToLearn.count - 1;
+        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = indexPath.row == self.thingsToLearn.count - 1;
     }else{
         entry = self.thingsToLearned[indexPath.row];
-
+        ((CustomCellBackground *)cell.backgroundView).lastCell = indexPath.row == self.thingsToLearned.count - 1;
+        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = indexPath.row == self.thingsToLearn.count - 1;
     }
     
     cell.textLabel.text = entry;
