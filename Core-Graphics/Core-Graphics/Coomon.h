@@ -13,3 +13,9 @@ void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor
 CGRect rectFor1pxStroke(CGRect rect);
 
 void draw1PxStroke(CGContextRef context, CGPoint startpoint, CGPoint endPoint, CGColorRef color );
+
+void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startColor, CGColorRef endColor);
+
+static inline double radians (double degress) {return degress * M_PI/180;}
+
+CGMutablePathRef createArcPathFromBottomOfRect(CGRect rect, CGFloat arcHeight);
