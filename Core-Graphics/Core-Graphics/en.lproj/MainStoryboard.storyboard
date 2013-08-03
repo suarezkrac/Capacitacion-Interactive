@@ -54,11 +54,6 @@
             <point key="canvasLocation" x="-50" y="-4"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CoolTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoolTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
