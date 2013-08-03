@@ -7,9 +7,12 @@
 //
 
 #import "CoolTableViewController.h"
+#import "CustomHeader.h"
 
 @interface CoolTableViewController ()
-
+@property (copy) NSArray* array;
+@property (copy) NSMutableArray* thingsToLearn;
+@property (copy) NSMutableArray* thingsToLearned;
 @end
 
 @implementation CoolTableViewController
@@ -26,12 +29,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.title = @"Core Graphics";
+    self.thingsToLearn = [@[@"SqlLite", @"TableView", @"Core-Graphics"] mutableCopy];
+    self.thingsToLearned = [@[@"UIKit", @"XCODE", @"Objective-C"] mutableCopy];
+    
+    UIImageView * background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_bg.jpg"]];
+    
+    self.tableView.backgroundView = background;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,18 +47,38 @@
 
 #pragma mark - Table view data source
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    CustomHeader *header = [[CustomHeader alloc] init];
+    
+    header.titleLabel.text = [self tableView: tableView titleForHeaderInSection:section];
+    
+    if (section == 1) {
+        header.lightColor = [UIColor colorWithRed:0.591 green:0.500 blue:0.847 alpha:1.000];
+        header.darkColor = [UIColor colorWithRed:72/255.0 green:22/255.0 blue:137/255.0 alpha:1.0];
+    }
+    return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 50.0f;
+}
+
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+  // Return the number of rows in the section.
+    if (section == 0) {
+        return self.thingsToLearn.count;
+    } else {
+        return self.thingsToLearned.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,45 +90,6 @@
     
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

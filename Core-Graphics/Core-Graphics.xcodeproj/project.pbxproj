@@ -22,6 +22,7 @@
 		993DEA3517AD405300D75F80 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 993DEA3417AD405300D75F80 /* CustomHeader.m */; };
 		993DEA3817AD408000D75F80 /* CustomFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 993DEA3717AD408000D75F80 /* CustomFooter.m */; };
 		993DEA3B17AD409B00D75F80 /* Coomon.m in Sources */ = {isa = PBXBuildFile; fileRef = 993DEA3A17AD409B00D75F80 /* Coomon.m */; };
+		993DEA3D17AD5B2100D75F80 /* main_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 993DEA3C17AD5B2100D75F80 /* main_bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		993DEA3717AD408000D75F80 /* CustomFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFooter.m; sourceTree = "<group>"; };
 		993DEA3917AD409B00D75F80 /* Coomon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coomon.h; sourceTree = "<group>"; };
 		993DEA3A17AD409B00D75F80 /* Coomon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coomon.m; sourceTree = "<group>"; };
+		993DEA3C17AD5B2100D75F80 /* main_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				993DEA1917AD3E9500D75F80 /* AppDelegate.h */,
 				993DEA1A17AD3E9500D75F80 /* AppDelegate.m */,
 				993DEA2217AD3E9500D75F80 /* MainStoryboard.storyboard */,
+				993DEA3C17AD5B2100D75F80 /* main_bg.jpg */,
 				993DEA3617AD408000D75F80 /* CustomFooter.h */,
 				993DEA3717AD408000D75F80 /* CustomFooter.m */,
 				993DEA3017AD404300D75F80 /* CustomCellBackground.h */,
@@ -183,6 +186,7 @@
 				993DEA1F17AD3E9500D75F80 /* Default@2x.png in Resources */,
 				993DEA2117AD3E9500D75F80 /* Default-568h@2x.png in Resources */,
 				993DEA2417AD3E9500D75F80 /* MainStoryboard.storyboard in Resources */,
+				993DEA3D17AD5B2100D75F80 /* main_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
