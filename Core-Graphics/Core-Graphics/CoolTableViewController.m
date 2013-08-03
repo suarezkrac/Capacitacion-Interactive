@@ -8,6 +8,7 @@
 
 #import "CoolTableViewController.h"
 #import "CustomHeader.h"
+#import "CustomFooter.h"
 
 @interface CoolTableViewController ()
 @property (copy) NSArray* array;
@@ -58,18 +59,20 @@
     }
     return header;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 50.0f;
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [[CustomFooter alloc] init];
 }
-
-
-
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 40.0f;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 15.0f;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     return 2;
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -81,12 +84,33 @@
     }
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"Bloque 1";
+    } else {
+        return @"Bloque 2";
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Configure the cell.
+    
+    NSString *entry;
+    
+    if (indexPath.section == 0) {
+        entry = self.thingsToLearn[indexPath.row];
+    }else{
+        entry = self.thingsToLearned[indexPath.row];
+
+    }
+    
+    cell.textLabel.text = entry;
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.highlightedTextColor = [UIColor blackColor];
     
     return cell;
 }
